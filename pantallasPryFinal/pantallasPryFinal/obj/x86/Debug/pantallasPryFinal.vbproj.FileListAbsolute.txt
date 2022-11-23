@@ -1,0 +1,12 @@
+E:\51\visual basic\pantallasPryFinal\pantallasPryFinal\bin\Debug\pantallasPryFinal.exe
+E:\51\visual basic\pantallasPryFinal\pantallasPryFinal\bin\Debug\pantallasPryFinal.pdb
+E:\51\visual basic\pantallasPryFinal\pantallasPryFinal\bin\Debug\pantallasPryFinal.xml
+E:\51\visual basic\pantallasPryFinal\pantallasPryFinal\obj\x86\Debug\pantallasPryFinal.formCliente.resources
+E:\51\visual basic\pantallasPryFinal\pantallasPryFinal\obj\x86\Debug\pantallasPryFinal.Resources.resources
+E:\51\visual basic\pantallasPryFinal\pantallasPryFinal\obj\x86\Debug\pantallasPryFinal.vbproj.GenerateResource.Cache
+E:\51\visual basic\pantallasPryFinal\pantallasPryFinal\obj\x86\Debug\pantallasPryFinal.exe
+E:\51\visual basic\pantallasPryFinal\pantallasPryFinal\obj\x86\Debug\pantallasPryFinal.xml
+E:\51\visual basic\pantallasPryFinal\pantallasPryFinal\obj\x86\Debug\pantallasPryFinal.pdb
+E:\51\visual basic\pantallasPryFinal\pantallasPryFinal\obj\x86\Debug\pantallasPryFinal.sanguches.resources
+E:\51\visual basic\pantallasPryFinal\pantallasPryFinal\obj\x86\Debug\pantallasPryFinal.baseDatos.resources
+E:\51\visual basic\pantallasPryFinal\pantallasPryFinal\obj\x86\Debug\pantallasPryFinal.seleccion.resources
