@@ -19,12 +19,14 @@
     End Sub
 
     Private Sub sanguches_Deactivate(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Deactivate
-        precio = 0
-        precioN = 0
+
         efectivo.Checked() = False
         debito.Checked() = False
         credito.Checked() = False
         ListBox2.Items.Clear()
+        baseDatos.DataGridView1.Rows.Add(nombreIngresado, apellidoIngresado, precioN, precio)
+        precio = 0
+        precioN = 0
 
 
 
@@ -105,7 +107,7 @@
         precio = precio - (precio * 10) / 100
         Label7.Text = "$ " & precio
         Label9.Text = "$ " & precioN
-        precio = precioN
+
 
         If efectivo.Checked() = False And debito.Checked() = False And credito.Checked() = False Then
             Button2.Enabled() = False
@@ -122,7 +124,7 @@
         precio = precio + (precio * 5) / 100
         Label7.Text = "$ " & precio
         Label9.Text = "$ " & precioN
-        precio = precioN
+
 
         If efectivo.Checked() = False And debito.Checked() = False And credito.Checked() = False Then
             Button2.Enabled() = False
@@ -139,8 +141,6 @@
         precio = precio + (precio * 7) / 100
         Label7.Text = "$ " & precio
         Label9.Text = "$ " & precioN
-
-        precio = precioN
 
         If efectivo.Checked() = False And debito.Checked() = False And credito.Checked() = False Then
             Button2.Enabled() = False
@@ -176,5 +176,4 @@
         Me.Hide()
         seleccion.Show()
     End Sub
-
 End Class

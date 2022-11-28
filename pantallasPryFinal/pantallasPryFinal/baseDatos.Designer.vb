@@ -22,6 +22,7 @@ Partial Class baseDatos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(baseDatos))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Apellido = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -36,9 +37,9 @@ Partial Class baseDatos
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nombre, Me.Apellido, Me.Compra, Me.Total})
-        Me.DataGridView1.Location = New System.Drawing.Point(28, 120)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 84)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(444, 200)
+        Me.DataGridView1.Size = New System.Drawing.Size(460, 284)
         Me.DataGridView1.TabIndex = 1
         '
         'Nombre
@@ -68,17 +69,22 @@ Partial Class baseDatos
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(202, 57)
+        Me.Label1.BackColor = System.Drawing.Color.Red
+        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label1.Font = New System.Drawing.Font("Verdana", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label1.Location = New System.Drawing.Point(115, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(93, 13)
+        Me.Label1.Size = New System.Drawing.Size(257, 34)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "BASE DE DATOS"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(183, 346)
+        Me.Button1.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(190, 399)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(83, 29)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Volver"
         Me.Button1.UseVisualStyleBackColor = True
@@ -87,10 +93,12 @@ Partial Class baseDatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(484, 461)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridView1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "baseDatos"
         Me.Text = "baseDatos"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

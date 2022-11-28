@@ -4,9 +4,10 @@
     Dim apellidoCorrecto As Boolean
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles formClienteSguienteButton.Click
+        dniCliente = TextBox1.Text()
         Me.Hide()
         sanguches.Show()
-        dniCliente = TextBox1.Text()
+
     End Sub
 
     Private Sub inputNombre_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles inputNombre.TextChanged
@@ -72,6 +73,7 @@
     End Sub
 
     Private Sub formCliente_Deactivate(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Deactivate
-
+        'TextBox1.Text() = ""
+        CheckBox1.Checked() = False
     End Sub
 End Class
